@@ -79,7 +79,7 @@ print("Location: \(employee[2])")
 print("Name: \(employee[0])")
 employee.remove(at: 1)
 print("Job title: \(employee[1])")
-print("Location: \(employee[2])")
+//print("Location: \(employee[2])")
 
 let employee2 = ["name": "Taylor Swift", "job": "Singer", "location": "Nashville"]
 
@@ -90,13 +90,13 @@ let employee3 = [
 ]
 
 
-print(employee3["name"])
-print(employee3["job"])
-print(employee3["location"])
-
-print(employee2["password"])
-print(employee2["status"])
-print(employee2["manager"])
+//print(employee3["name"])
+//print(employee3["job"])
+//print(employee3["location"])
+//
+//print(employee2["password"])
+//print(employee2["status"])
+//print(employee2["manager"])
 
 print(employee2["name", default: "Unknown"])
 print(employee2["job", default: "Unknown"])
@@ -130,3 +130,38 @@ archEnemies["Batman"] = "The Joker"
 archEnemies["Superman"] = "Lex Luthor"
 
 archEnemies["Batman"] = "Penguin"
+
+
+
+//3 How to use sets for fast data lookup
+
+
+var people = Set<String>()
+people.insert("Denzel Washington")
+people.insert("Tom Cruise")
+people.insert("Nicolas Cage")
+people.insert("Samuel L Jackson")
+
+
+//4 How to create and use enums
+
+
+enum Weekday {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+}
+
+var day = Weekday.monday
+day = Weekday.tuesday
+day = Weekday.friday
+
+enum Weekday1 {
+    case monday, tuesday, wednesday, thursday, friday
+}
+
+var day1 = Weekday1.monday
+day1 = .tuesday
+day1 = .friday
